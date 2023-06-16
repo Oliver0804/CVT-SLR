@@ -114,7 +114,7 @@ if __name__ == '__main__':
             except AttributeError:
                 default_arg = yaml.load(f)
         key = vars(p).keys()
-        # print(key, default_arg.keys())
+        print(key, default_arg.keys())
         for k in default_arg.keys():
             if k not in key:
                 print('WRONG ARG: {}'.format(k))
